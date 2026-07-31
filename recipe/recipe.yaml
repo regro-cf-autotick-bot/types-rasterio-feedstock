@@ -34,7 +34,9 @@ tests:
   - python:
       imports: []
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version: 
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Typing stubs for rasterio
